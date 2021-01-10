@@ -1,0 +1,46 @@
+@import "variables";
+@import "mixins";
+
+.table { 
+    // display: flex;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: $header-height + $toolbar-height + $formula-height;
+    border-top: 1px solid silver;
+    overflow-x: auto;
+
+    .row{
+        display: flex;
+        height: $row-height;
+        min-height: 20px;
+    }
+
+    .cell_info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $info-cell-width;
+        height: $row-height;
+        background: #f8f9fa;
+        border: 1px solid $border-color;
+        border-top: none;
+    }
+
+    .row_data {
+        display: flex;
+    }
+
+    .column {
+       @include cell-template(#f8f9fa);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cell {
+        @include cell-template(none);
+        outline: none;
+        padding: 5px;
+    }
+}

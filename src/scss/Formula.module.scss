@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+
+.formula {
+    right: 0;
+    left: 0;
+    top: $toolbar-height + $header-height;
+    height: $formula-height;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid silver;
+
+    & .info {
+        font-size: 14px;
+        font-style:italic;
+        min-width: 20px;
+        width: $info-cell-width;
+        border-right: 1px solid silver;
+        text-align: center;
+    }
+}

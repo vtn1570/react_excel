@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.excel{
+    position: relative;
+      color: #888;
+      max-width: 100%; 
+      height: 100%;
+      font-size: .8rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +44,4 @@
     transform: rotate(360deg);
   }
 }
+
